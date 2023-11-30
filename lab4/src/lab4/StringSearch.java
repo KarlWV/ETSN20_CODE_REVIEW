@@ -7,6 +7,10 @@ import java.util.Scanner; // Import the Scanner class to read text files
 public class StringSearch {
 
 	public static void main(String[] args) {
+		if (args.length != 2) {
+			System.out.println("Enter the string you want to search for and the path to the file as arguments");
+			return;
+		}
 		findString(args[0],args[1]);
 
 	}
