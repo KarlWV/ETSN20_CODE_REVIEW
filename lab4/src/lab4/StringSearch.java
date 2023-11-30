@@ -11,7 +11,7 @@ public class StringSearch {
 			System.out.println("Enter the string you want to search for and the path to the file as arguments");
 			return;
 		}
-		findString(args[0],args[1]);
+		findString(args[0], args[1]);
 
 	}
 
@@ -23,9 +23,10 @@ public class StringSearch {
 				String data = myReader.nextLine();
 				String[] words = data.split(" ");
 				for (String word : words) {
-				if (word.equals(s)) {
-					System.out.println(data);
-				}
+					if (word.equals(s)) {
+						System.out.println(data);
+						break;
+					}
 				}
 			}
 			myReader.close();
@@ -34,5 +35,4 @@ public class StringSearch {
 			e.printStackTrace();
 		}
 	}
-
 }
