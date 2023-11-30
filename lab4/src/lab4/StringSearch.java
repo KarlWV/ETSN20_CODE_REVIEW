@@ -8,7 +8,7 @@ public class StringSearch {
 
 	public static void main(String[] args) {
 		if (args.length != 2) {
-			System.out.println("Enter the string you want to search for and the path to the file as arguments");
+			System.out.println("Error: expecting two arguments. First word, Second file");
 			return;
 		}
 		findString(args[0], args[1]);
