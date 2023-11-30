@@ -17,8 +17,11 @@ public class StringSearch {
 			Scanner myReader = new Scanner(myObj);
 			while (myReader.hasNextLine()) {
 				String data = myReader.nextLine();
-				if (data.contains(s)) {
+				String[] words = data.split(" ");
+				for (String word : words) {
+				if (word.equals(s)) {
 					System.out.println(data);
+				}
 				}
 			}
 			myReader.close();
